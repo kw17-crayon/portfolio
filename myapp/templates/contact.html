@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Contact</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="{% static 'myproject/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="{% static 'myproject/css/blog-home.css' %}" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{% static 'contact/css/styles.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'contact/css/style.css' %}" />
+
+
+    </head>
+    <body id="page-top">
+          <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Contact</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'home' %}">Home
+                        <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'mypage' %}">Mypage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'incollege' %}">Incollege</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'myproject' %}">Myproject</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="main">
+            <h1>Contact me</h1>
+            <p>if you have a question, you can leave a message.</p>
+
+            <h2>인생 목표</h2>
+
+            <div id = "target">
+                <table>
+                    <th>하고싶은 일</th>
+                    <th>성공 여부</th>
+
+                    <tr>
+                        <td>토익 900점</td>
+                        <td>o</td>
+                    </tr>
+                    <tr>
+                        <td>창업하기</td>
+                        <td>x</td>
+                    </tr>
+                    <tr>
+                        <td>혼자 해외여행가기</td>
+                        <td>x</td>
+                    </tr>
+                    <tr>
+                        <td>자기계발</td>
+                        <td>o</td>
+                    </tr>
+                </table>
+            </div>
+
+            <br><br><br>
+            <br>
+
+            <h1>SEND MESSAGE</h1>
+
+            <div id="contact-area">
+			
+                <form method="post" action="test.php" target="iframe1">
+                    <label for="Name">Name:</label>
+                    <input type="text" name="Name" id="Name" />
+                    
+                    <label for="City">City:</label>
+                    <input type="text" name="City" id="City" />
+        
+                    <label for="Email">Email:</label>
+                    <input type="text" name="Email" id="Email" />
+                    
+                    <label for="Message">Message:</label><br />
+                    <textarea name="Message" rows="20" cols="20" id="Message"></textarea>
+    
+                    <input type="submit" name="submit" value="Submit" class="submit-button" onclick="alert_()"/>
+                </form>
+                <iframe name="iframe1" style="display:none;"></iframe>
+            </div>
+
+
+        </div>
+
+
+        
+          <!-- Footer -->
+        <footer id = "foot" class="py-5 bg-dark">
+            <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+            </div>
+            <!-- /.container -->
+        </footer>
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="{% static 'myproject/vendor/jquery/jquery.min.js' %}"></script>
+        <script src="{% static 'myproject/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+        <script>
+            function alert_(){
+                alert("성공");
+            }
+        </script>
+    </body>
+</html>

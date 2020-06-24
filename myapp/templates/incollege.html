@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>InCollege</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'incollege/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'incollege/css/modern-business.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Incollege_활동 PAGE</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'home' %}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'mypage' %}">Mypage</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'myproject' %}">Myproject</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide One - Set the background image for this slide in the line below -->
+        <div class="carousel-item active" style="background-image: url('https://www.kw.ac.kr/KWData/webeditor/2020/2020_05_29_102245.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3></h3>
+            <p></p>
+          </div>
+        </div>
+        <!-- Slide Two - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('data:image/jpeg;base64,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')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3></h3>
+            <p></p>
+          </div>
+        </div>
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('https://media.vlpt.us/images/kks1342320/post/e4836efe-a149-422d-8f9b-4cc099a12f5c/image.png')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3></h3>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <h1 class="my-4">Welcome to My College</h1>
+
+
+    <!-- Portfolio Section -->
+    <!--h2>Portfolio Heading</h2-->
+
+    <div class="row">
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="{% static 'incollege/src/1&2학년.png' %}" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="{% url 'grade1' %}">1&2 학년</a>
+            </h4>
+            <p class="card-text">
+              <ul>
+                <li>JAVA 스터디</li>
+                <li>TensorFlow</li>
+                <li>머신러닝스터디</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="{% static 'incollege/src/3학년.png' %}" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">3학년</a>
+            </h4>
+            <p class="card-text">
+              <ul>
+                <li>teammate(창업동아리)</li>
+                <li>KAIG (AI 스터디)</li>
+                <li>멋쟁이사자처럼</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="{% static 'incollege/src/4학년.png' %}" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">4학년</a>
+            </h4>
+            <p class="card-text">
+              <ul>
+                <li>산학연계</li>
+                <li>참빛설계</li>
+                <li>PYTORCH 공부</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+    <hr>
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'incollege/vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'incollege/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+</body>
+
+</html>

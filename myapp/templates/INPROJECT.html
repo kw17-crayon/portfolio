@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>졸업작품</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'INPROJECT/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'INPROJECT/css/blog-post.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Myproject</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'home' %}">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'mypage' %}">Mypage</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'incollege' %}">Incollege</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'myproject' %}">Myproject</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <!-- Post Content Column -->
+      <div class="col-lg-8">
+
+        <!-- Title -->
+        <h1 class="mt-4">졸업 작품</h1>
+
+        <!-- Author -->
+        <p class="lead">
+          Team.
+          <a href="https://github.com/kw17-crayon">crayon</a>
+        </p>
+
+        <hr>
+
+        <!-- Date/Time -->
+        <p>Posted on July 24, 2020 at 12:00 PM</p>
+
+        <hr>
+
+        <!-- Preview Image -->
+        <img class="img-fluid rounded" src="https://yerevann.github.io/public/2016-02-06/dmn-high-level.png" alt="">
+
+        <hr>
+
+        <!-- Post Content -->
+        <p class="lead">딥러닝 알고리즘인 Dynamic Memory Network를 이용해서 졸업작품 소프트웨어융합대학 수강 안내 챗봇을 개발하였다.</p>
+
+        <p>기계독해란, A 문서와 A문서 내용에 대한 질문이 주어졌을 때, 질문에 대한 답변을 A문서에서 찾는 방법
+          -> 단순히, 질문에 대한 내용을 ‘검색’하는 것이 아니라, 문서를 ‘이해’하여 원하는 답변을 해주는 서비스
+          </p>
+
+        <p>기계독해를 해당 프로젝트에서 사용한 이유 : 
+          수강 신청 정보를 안내해주는 챗봇을 만들기 위해 수강신청 자료집의 내용을 이해한 챗봇이 사용자의 질문에 알맞은 답변을 할 수 있을 것이라고 생각
+          </p>
+
+        <blockquote class="blockquote">
+          <p class="mb-0">방대한 양의 수강신청자료집을 정독할 필요 없이,
+            사용자가 궁금한 내용을 질문을 하면 그에 대한 답을 손쉽게 얻을 수 있음</p>
+          <footer class="blockquote-footer">의의
+            <cite title="Source Title"></cite>
+          </footer>
+        </blockquote>
+
+        <p>산학연계로 회사와 연동하여 진행한 프로젝트이다.</p>
+
+        <p>github link : <a href="https://github.com/kw17-crayon">https://github.com/kw17-crayon</a></p>
+
+        <hr>
+
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'INPROJECT/vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'INPROJECT/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+</body>
+
+</html>

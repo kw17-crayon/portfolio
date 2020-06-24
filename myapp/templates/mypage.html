@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>MyPage</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'mypage/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'mypage/css/small-business.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+      <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">My Page_자기소개</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'home' %}">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'incollege' %}">Incollege</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'myproject' %}">Myproject</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Heading Row -->
+    <div class="row align-items-center my-5">
+      <div class="col-lg-7">
+        <img class="img-fluid rounded mb-4 mb-lg-0" src="{% static 'mypage/src/1selfphoto.jpg' %}" alt="">
+      </div>
+      <!-- /.col-lg-8 -->
+      <div class="col-lg-5">
+        <h1 class="font-weight-light">self-introduction</h1>
+        <p>이름 : 이정환<br>
+        생년월일 : 19980521<br>
+        연락처 : 010.4398.4098<br>
+        EMAIL : veloss@kakao.com<br>
+        소속 : 광운대학교 재학생
+        <br><br>
+        <strong>반갑습니다!</strong>
+        </p>
+        <!--a class="btn btn-primary" href="#">Call to Action!</a-->
+      </div>
+      <!-- /.col-md-4 -->
+    </div>
+    <!-- /.row -->
+
+    <!-- Call to Action Well -->
+    <div class="card text-white bg-secondary my-5 py-4 text-center">
+      <div class="card-body">
+        <p class="text-white m-0"> 안녕하세요<br>광운대학교 정보융합학부 데이터사이언스학과에 <br>재학중인 4학년 이정환입니다</p>
+      </div>
+    </div>
+
+    <!-- Content Row -->
+    <div class="row">
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title">학력사항</h2>
+            <p class="card-text">
+                <ul>
+                    <li>서라벌중학교</li>
+                    <li>용문고등학교</li>
+                    <li>광운대학교(재학)</li>
+                </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- /.col-md-4 -->
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title">자격증</h2>
+            <p class="card-text">
+              <ul>
+                <li>
+                  운전면허 : 1종보통
+                </li>
+                <li>
+                  토익 900점 (목표)
+                </li>
+                <li>
+                  한글/파워포인트/엑셀 자격증
+                </li>
+              </ul>
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- /.col-md-4 -->
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title">경력/수상</h2>
+            <p class="card-text">
+              <ul>
+                <li>항공 데이터 공모전 입상</li>
+                <li>인공지능 아이디어 공모전 입상</li>
+                <li>etc</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- /.col-md-4 -->
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'mypage/vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'mypage/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+</body>
+
+</html>
